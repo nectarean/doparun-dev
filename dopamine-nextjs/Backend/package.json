@@ -1,0 +1,40 @@
+{
+  "name": "project",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest --runInBand",
+    "format": "prettier . --write",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:pull": "drizzle-kit introspect",
+    "db:drop": "drizzle-kit drop"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "drizzle-orm": "^0.45.1",
+    "jsonwebtoken": "^9.0.0",
+    "next": "16.1.6",
+    "pg": "^8.17.2",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.0",
+    "@babel/preset-env": "^7.25.0",
+    "@babel/preset-react": "^7.28.5",
+    "@tailwindcss/postcss": "^4",
+    "@types/bcryptjs": "^2.4.6",
+    "babel-jest": "^29.7.0",
+    "babel-plugin-react-compiler": "1.0.0",
+    "drizzle-kit": "^0.31.8",
+    "jest": "^29.7.0",
+    "prettier": "3.8.1",
+    "tailwindcss": "^4"
+  }
+}

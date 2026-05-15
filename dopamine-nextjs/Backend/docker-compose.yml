@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: ./
+      target: dev
+    container_name: app
+    restart: 'unless-restart'
+    ports:
+      - '3000:3000'
